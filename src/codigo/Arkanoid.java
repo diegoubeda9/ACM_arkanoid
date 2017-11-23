@@ -22,7 +22,7 @@ public class Arkanoid extends acm.program.GraphicsProgram{
 
 	//el sistema del marcador
 	int puntuacion = 0;
-	Marcador marcador = new Marcador(20, 40);
+	Marcador marcador = new Marcador(48, 40);
 
 	public void init(){
 		addMouseListeners();
@@ -49,7 +49,7 @@ public class Arkanoid extends acm.program.GraphicsProgram{
 
 
 	}
-
+//este codigo mueve la barra
 	public void mouseMoved (MouseEvent evento){
 		barra1.mueveBarra(evento.getX(), getWidth());
 	}
